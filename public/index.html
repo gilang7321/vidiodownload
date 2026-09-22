@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VideoDown — Cyberpunk Downloader</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="rain"></div>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">▷</span><span>VIDEODOWN<small>Fast • Free • No Watermark</small></span></a>
+  <nav>
+    <a class="active" href="#home">⌂ Beranda</a>
+    <a href="#history">◷ Riwayat</a>
+    <a href="#help">? Bantuan</a>
+  </nav>
+  <button class="theme" id="themeBtn">◐</button>
+  <div class="free">♔ 100% Gratis</div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">DOWNLOAD VIDEO DENGAN MUDAH</p>
+    <h1><span>SIMPLE</span> • FAST • <b>NO WATERMARK</b></h1>
+    <p>Tempel link video, cek informasinya, pilih kualitas, lalu download. Gunakan hanya pada konten yang kamu berhak simpan.</p>
+  </div>
+  <form id="urlForm" class="downloader">
+    <div class="url-row">
+      <span>🔗</span>
+      <input id="urlInput" type="url" required placeholder="Tempel link video di sini...">
+      <button id="checkBtn" type="submit">⌄ Cek Video</button>
+    </div>
+    <div class="platforms">
+      <button type="button" data-example="https://www.youtube.com/watch?v=">▶ YouTube</button>
+      <button type="button" data-example="https://www.tiktok.com/">♪ TikTok</button>
+      <button type="button" data-example="https://www.instagram.com/">◎ Instagram</button>
+      <button type="button" data-example="https://www.facebook.com/">f Facebook</button>
+      <button type="button" data-example="https://x.com/">𝕏 Twitter/X</button>
+      <button type="button" data-example="">↗ Lainnya</button>
+    </div>
+  </form>
+</section>
+
+<section class="stats">
+  <article><strong>ϟ</strong><b>Proses Cepat</b><span>Diproses oleh server</span></article>
+  <article><strong>♢</strong><b>Versi Sumber</b><span>Tidak menambahkan watermark</span></article>
+  <article><strong>HD</strong><b>Kualitas Lengkap</b><span>SD • HD • Full HD • 4K*</span></article>
+  <article><strong>▣</strong><b>Multi Perangkat</b><span>PC • Tablet • Mobile</span></article>
+  <article><strong>∞</strong><b>Tanpa Batas</b><span>Gunakan sesuai kebutuhan</span></article>
+</section>
+
+<section class="workspace">
+  <article class="panel preview-panel">
+    <div class="panel-title"><span>▷</span> Preview Video</div>
+    <div class="preview" id="preview">
+      <div class="placeholder">
+        <div class="play">▶</div>
+        <p>Tempel URL untuk melihat preview</p>
+      </div>
+    </div>
+    <div class="video-meta" id="meta"></div>
+  </article>
+
+  <article class="panel control-panel">
+    <div class="panel-title"><span>↗</span> URL Video</div>
+    <div class="mini-input"><input id="urlMirror" placeholder="URL video"><button id="clearBtn">×</button></div>
+    <div class="panel-title small"><span>◈</span> Kualitas Video</div>
+    <div id="qualities" class="qualities">
+      <div class="empty-quality">Belum ada data video.</div>
+    </div>
+    <button class="download-btn" id="downloadBtn" disabled>⇩ Download Video <span>→</span></button>
+    <div id="status" class="status"></div>
+  </article>
+
+  <article class="panel history-panel" id="history">
+    <div class="panel-title"><span>◷</span> Riwayat Download <button id="clearHistory">Hapus</button></div>
+    <div id="historyList" class="history-list"><div class="history-empty">Belum ada download.</div></div>
+  </article>
+</section>
+
+<section class="help" id="help">
+  <h2>Bagaimana cara menggunakan?</h2>
+  <div class="steps">
+    <div><b>01</b><strong>Tempel link</strong><span>Masukkan URL video yang publik.</span></div>
+    <div><b>02</b><strong>Cek video</strong><span>Server mengambil metadata dan kualitas.</span></div>
+    <div><b>03</b><strong>Pilih kualitas</strong><span>Pilih resolusi yang tersedia.</span></div>
+    <div><b>04</b><strong>Download</strong><span>Simpan file ke perangkatmu.</span></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="brand"><span class="brand-mark">▷</span><span>VideoDown<small>Download video dengan mudah.</small></span></div>
+  <div>Beranda &nbsp; Riwayat &nbsp; Bantuan &nbsp; Kebijakan Privasi &nbsp; Syarat</div>
+  <div>© 2026 VideoDown</div>
+</footer>
+<script src="./app.js"></script>
+</body>
+</html>

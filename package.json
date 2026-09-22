@@ -1,0 +1,14 @@
+{
+  "name": "videodown-cyberpunk",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Cyberpunk video downloader with Express and Python yt-dlp.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
