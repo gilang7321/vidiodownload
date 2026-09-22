@@ -6,7 +6,7 @@ const crypto = require("crypto");
 const { spawn } = require("child_process");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 const DOWNLOAD_DIR = path.join(os.tmpdir(), "videodown-downloads");
 fs.mkdirSync(DOWNLOAD_DIR, { recursive: true });
 
